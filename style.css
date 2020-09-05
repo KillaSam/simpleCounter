@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    font-family: 'Roboto';
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.orangesmile.com/common/img_cities_original/vulcano-island-2323-42.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+    background-attachment: fixed;
+}
+
+
+#result, #enter {
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+#result::before, #enter::before {
+    content: "";
+    background-image: url("https://www.orangesmile.com/common/img_cities_original/vulcano-island-2323-42.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+    background-attachment: fixed;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;    
+    z-index: -1;
+    filter: blur(10px);
+}
+
+#enter{
+    
+}
+
+#result {
+    display: none;
+    
+}
+
+.enter-platform {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+select, button, option{
+    color: #000000;
+}
+.date {
+    width: 40em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.date div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+
+#result p {
+    font-size: 5em
+}
+
+#enter p {
+    font-size: 2em
+}
+
+#enter select {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: .3em 4em .3em  .3em ;
+    outline: none;
+    font-size: 1.5em
+}
+
+
+button {
+    font-size: 2em;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: #a781ff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #a781ff;
+}
+
+span {
+    font-size: 2em;
+}

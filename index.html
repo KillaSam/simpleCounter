@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Count Timer</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="enter">
+        <h1>Please choose date for extinction</h1>
+        <div class="enter-platform">
+            <div class="entr-days">
+                <p>Days</p>
+                <select id="selected-day">
+                </select>
+            </div>
+            <div class="entr-months">
+                <p>Month</p>
+                <select name="" id="selected-month">
+                </select>
+            </div>
+            <div class="entr-years">
+                <p>Year</p>
+                <select id="selected-year">
+                </select>
+            </div>
+        </div>
+        <button id="sbm-btn" type="submit">Enter</button>
+    </div>
+    <div id="result">
+        <h1>Countdown to extinction</h1>
+        <div class="date">
+            <div class="days">
+                <p id="day">0</p>
+                <span>Days</span>
+            </div>
+            <div class="hours">
+                <p id="hour">0</p>
+                <span>Hours</span>
+            </div>
+            <div class="minutes">
+                <p id="minute">0</p>
+                <span>Minutes</span>
+            </div>
+            <div class="seconds">
+                <p id="second">0</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
