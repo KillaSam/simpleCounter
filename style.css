@@ -99,9 +99,12 @@ h1 {
     border-radius: 10px;
     padding: .3em 4em .3em  .3em ;
     outline: none;
-    font-size: 1.5em
+    font-size: 1.5em;
+    max-height: 2em;
 }
-
+option {
+    
+}
 
 button {
     font-size: 2em;
@@ -121,4 +124,24 @@ button:hover {
 
 span {
     font-size: 2em;
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    #enter select {
+        font-size: .5em;
+    }
+
+    #result p{
+        font-size: 1.5em;
+    }
+    #enter p {
+        font-size: .5em;
+    }
+    button {
+        font-size: .5em;
+    }
 }
