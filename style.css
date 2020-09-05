@@ -48,13 +48,8 @@ body {
     filter: blur(10px);
 }
 
-#enter{
-    
-}
-
 #result {
     display: none;
-    
 }
 
 .enter-platform {
@@ -69,7 +64,7 @@ select, button, option{
 .date {
     width: 40em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
@@ -102,9 +97,6 @@ h1 {
     font-size: 1.5em;
     max-height: 2em;
 }
-option {
-    
-}
 
 button {
     font-size: 2em;
@@ -128,20 +120,27 @@ span {
 
 @media screen and (max-width: 425px) {
     h1 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #enter select {
-        font-size: .5em;
+        font-size: .7em;
+    }
+
+    .date {
+        width: 25em;
     }
 
     #result p{
         font-size: 1.5em;
     }
+    #result span{
+        font-size: 1.5em;
+    }
     #enter p {
-        font-size: .5em;
+        font-size: 1em;
     }
     button {
-        font-size: .5em;
+        font-size: 1em;
     }
 }
